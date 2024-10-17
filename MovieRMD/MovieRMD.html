@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Movie Selector</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="top-movies.html">Top Movies</a></li>
+            </ul>
+        </nav>
+
+        <h1>Personal Movie Selector</h1>
+        
+        <label for="genre">Select Genre:</label>
+        <select id="genre">
+            <option value="action">Action</option>
+            <option value="romance">Romance</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="horror">Horror</option>
+        </select>
+
+        <label for="length">Select Length:</label>
+        <select id="length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <label for="mood">Select Mood:</label>
+        <select id="mood">
+            <option value="excited">Excited</option>
+            <option value="romantic">Romantic</option>
+            <option value="sad">Sad</option>
+            <option value="funny">Funny</option>
+        </select>
+
+        <button onclick="generateMovies()">Get My Results</button>
+        <div id="movie-results" class="movie-results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
